@@ -21,6 +21,8 @@ int main() {
     // elfUi.insertNewChild();
     //elfUi.processCities1();
     //   elfUi.processCities2();
+
+    std::cout<<"Test commit";
 }
 
 
