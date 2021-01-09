@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="FinalProjectPOO"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FinalProjectPOO">
+				<Option output="C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/FinalProjectPOO.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/Makefile&quot;  VERBOSE=1 FinalProjectPOO"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FinalProjectPOO/fast">
+				<Option output="C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/FinalProjectPOO.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/Makefile&quot;  VERBOSE=1 FinalProjectPOO/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Children.cpp">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Children.h">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Gift.cpp">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Gift.h">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Letter.cpp">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Letter.h">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Wishlist.cpp">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Wishlist.h">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/ChildrenDB/ChildrenDBInterface.cpp">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/ChildrenDB/ChildrenDBInterface.h">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/ChildrenDB/ChildrenDatabase.cpp">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/ChildrenDB/ChildrenDatabase.h">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/Cities/CitiesData.cpp">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/Cities/CitiesData.h">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/Cities/City.cpp">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/Cities/City.h">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/DefaultGift.cpp">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/DefaultGift.h">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/GiftStoreData.cpp">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/GiftStoreData.h">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/LetterDB/LetterDatabase.cpp">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/LetterDB/LetterDatabase.h">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/LetterDB/LetterDatabaseInterface.cpp">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/LetterDB/LetterDatabaseInterface.h">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/Dijkstra/DijkstraShortestPath.cpp">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/Dijkstra/DijkstraShortestPath.h">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/MinimSpanningTree/Edge.cpp">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/MinimSpanningTree/Edge.h">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/MinimSpanningTree/Graph.cpp">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/MinimSpanningTree/Graph.h">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/MinimSpanningTree/ProcessRoad.cpp">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/MinimSpanningTree/ProcessRoad.h">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/MinimSpanningTree/RoadsConnection.cpp">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/MinimSpanningTree/RoadsConnection.h">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/MinimSpanningTree/Subset.cpp">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/MinimSpanningTree/Subset.h">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/ProcessData/ElfData.cpp">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/ProcessData/ElfData.h">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/ProcessData/ElfProcess.cpp">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/ProcessData/ElfProcess.h">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/ProcessData/ProcessLetterInterface.cpp">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/ProcessData/ProcessLetterInterface.h">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/UI/AddNewLetterInterface.cpp">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/UI/AddNewLetterInterface.h">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/UI/ElfUI.cpp">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/UI/ElfUI.h">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/UI/LetterUI.cpp">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/UI/LetterUI.h">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/Utils/Util.cpp">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/Utils/Util.h">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/main.cpp">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
