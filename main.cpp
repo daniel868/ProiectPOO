@@ -16,13 +16,13 @@
 
 int main() {
     ElfUI elfUi;
-     //  elfUi.insertNewChild();
-       elfUi.showChildGift();
-    // elfUi.insertNewChild();
-    //elfUi.processCities1();
-    //   elfUi.processCities2();
+    elfUi.showAllLeters();
+    elfUi.showFinalResult();
+    std::cout << "\n";
+    elfUi.processCities1();
+    std::cout << "\n";
+    elfUi.processCities2();
 
-    std::cout<<"Test commit";
 }
 
 

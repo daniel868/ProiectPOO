@@ -52,3 +52,7 @@ const int &ElfData::getFinalGirlPacks() const {
 const int &ElfData::getFinalBoyPacks() const {
     return finalBoyPacks;
 }
+
+const map<string, pair<float, int>> &ElfData::getFinalCoast() const {
+    return finalCoast;
+}

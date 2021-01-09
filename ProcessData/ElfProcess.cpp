@@ -6,6 +6,7 @@
 #include "ElfProcess.h"
 #include "ElfData.h"
 #include "../Utils/Util.h"
+#include "map"
 
 
 void ElfProcess::generateFinalElfData(Letter letter) {
@@ -68,4 +69,28 @@ void ElfProcess::generateFinalElfData(Letter letter) {
 
 const ElfData &ElfProcess::getElfData() const {
     return elfData;
+}
+
+void ElfProcess::generateTotalCost() {
+    map<string, pair<float, int>> finalCoasts;
+    for (auto currentWishlist:this->elfData.getFinalChildrenWishList()) {
+        float giftTotalCost = 0;
+        for (auto currentGift :currentWishlist.getGiftList()) {
+            giftTotalCost += currentGift.getGiftPrice();
+        }
+        float totalCandyNumber = 0;
+        int flag = 0;
+        for (int i = 0; i < elfData.getFinalChildrenCandyNumber().size() && flag == 0; i++) {
+            if (elfData.getFinalChildrenCandyNumber()[i].first ==
+                currentWishlist.getChildrenName() + " " + currentWishlist.getChildrenSurname()) {
+                totalCandyNumber = elfData.getFinalChildrenCandyNumber()[i].second;
+                flag = 1;
+            }
+        }
+        finalCoasts.insert(pair<string, pair<float, int>>(
+                currentWishlist.getChildrenName() + " " + currentWishlist.getChildrenSurname(),
+                pair<float, int>(giftTotalCost, totalCandyNumber)));
+    }
+    elfData.finalCoast = finalCoasts;
+
 }

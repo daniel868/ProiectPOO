@@ -17,6 +17,7 @@ private:
     ElfData elfData;
 public:
     void generateFinalElfData(Letter letter) override;
+    void generateTotalCost() override;
     const ElfData &getElfData() const;
 };
 

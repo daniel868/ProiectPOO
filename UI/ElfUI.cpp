@@ -11,8 +11,11 @@
 #include "../Databases/Cities/City.h"
 #include "../MinimSpanningTree/ProcessRoad.h"
 #include "../Dijkstra/DijkstraShortestPath.h"
+#include "map"
 
-void ElfUI::showChildGift() {
+map<string, pair<float, int>> coasts;
+
+void ElfUI::showFinalResult() {
     LetterDatabase letterDB;
     ElfProcess elfProcess;
 
@@ -20,12 +23,14 @@ void ElfUI::showChildGift() {
     for (Letter currentLetter:letters) {
         elfProcess.generateFinalElfData(currentLetter);
     }
+    elfProcess.generateTotalCost();
+    coasts = elfProcess.getElfData().finalCoast;
 
     vector<Wishlist> wishLists = elfProcess.getElfData().finalChildrenWishList;
-    std::cout << "Children final list:\n";
+    std::cout << "\t" << "2. Elf's Children final list:\n";
     for (Wishlist wishlist:wishLists) {
         float sum = 0;
-        std::cout << wishlist.getChildrenName() << " " << wishlist.getChildrenSurname() << "\n";
+        std::cout << " * " << wishlist.getChildrenName() << " " << wishlist.getChildrenSurname() << "\n";
         std::cout << "\t";
         for (int i = 0; i < wishlist.getGiftList().size(); i++) {
             if (i < wishlist.getGiftList().size() - 1) {
@@ -33,37 +38,56 @@ void ElfUI::showChildGift() {
             } else {
                 std::cout << "- " << wishlist.getGiftList()[i].getGiftName() << "\n";
             }
+            sum += wishlist.getGiftList()[i].getGiftPrice();
         }
     }
     vector<pair<string, int>> candyNumber = elfProcess.getElfData().getFinalChildrenCandyNumber();
 
     std::cout << "\n";
-    std::cout << "Ambalaj pentru fete: \n" << " " << elfProcess.getElfData().finalGirlPacks << "\n";
-    std::cout << "Ambalaj pentru baieti: \n" << " " << elfProcess.getElfData().finalBoyPacks << "\n";
+    std::cout << "\t" << "3. Troll's color packed:\n";
+    std::cout << "- Girls: " << " " << elfProcess.getElfData().finalGirlPacks << "\n";
+    std::cout << "- Boys: " << " " << elfProcess.getElfData().finalBoyPacks << "\n";
     std::cout << "\n";
-    std::cout << "Candy number list:\n";
+    std::cout << "\t" << "Lady Christmas's Candy number list:\n";
     for (auto currentCandy:candyNumber) {
-        std::cout << " - " << currentCandy.first << "\t" << currentCandy.second << "\n";
+        std::cout << " - " << "Child name: " << currentCandy.first << "\t" << "Candy number: " << currentCandy.second
+                  << "\n";
     }
 
-    std::cout<<"\n";
-    std::cout<<"Final prices are:\n";
+    std::cout << "\n";
+    std::cout << "\t" << "4. Lady Christmas final's math:\n";
+    float count = 0;
     for (Wishlist wishlist:wishLists) {
-        float sum = 0;
+
         bool isCoal = false;
         for (Gift gift: wishlist.getGiftList()) {
             if (gift.getGiftName() == "Coal" && !isCoal) {
                 isCoal = true;
             }
-            sum += gift.getGiftPrice();
         }
+        count++;
+        float childTotalGift = coasts.find(
+                wishlist.getChildrenName() + " " + wishlist.getChildrenSurname())->second.first;
+        int childCandyTotal = coasts.find(
+                wishlist.getChildrenName() + " " + wishlist.getChildrenSurname())->second.second;
+
         if (!isCoal) {
-            std::cout << wishlist.getChildrenName() + " " + wishlist.getChildrenName() + " " << sum << "$\n";
+            std::cout << count << ". " + wishlist.getChildrenName() + " " << wishlist.getChildrenSurname() << ":\n";
+            std::cout << "\t" << "Gift total price: " << childTotalGift << " $" << "\n";
+            std::cout << "\t" << "Candy total price: " << childCandyTotal << " $" << "\n";
+            std::cout << "-----------------------------------------------------------------\n";
+            std::cout << "\t" << "Total:  " << childTotalGift + childCandyTotal << " $\n";
         } else {
-            std::cout << wishlist.getChildrenName() + " " + wishlist.getChildrenName() + " "
-                      << sum << "+" << "0.5$ = " << sum<<"$\n";
+            std::cout << count << " . " + wishlist.getChildrenName() + " " << wishlist.getChildrenSurname() << "\n";
+            std::cout << "\t" << "Gift total price: " << childTotalGift << " $" << "\n";
+            std::cout << "\t" << "Candy total price: " << childCandyTotal << " $" << "\n";
+            std::cout << "\t" << "A surprise from trolls: 0.5$" << "\n";
+            std::cout << "-----------------------------------------------------------------\n";
+            std::cout << "\t" << "Total:  " << childTotalGift + childCandyTotal + 0.5 << " $ \n";
         }
     }
+    std::cout << "\n";
+    std::cout << "\t5. Santa's travel roads:";
 }
 
 vector<pair<string, string>> ElfUI::childCities() {
@@ -115,7 +139,6 @@ void ElfUI::showFinalRoad() {
     vector<Edge> finalEdge = processRoad.getEdges();
 
     processRoad.setRoadData(processRoad.getEdges().size(), 4);
-//    processRoad.showRoad(finalEdge);
 }
 
 void ElfUI::processCities1() {
@@ -129,5 +152,28 @@ void ElfUI::processCities2() {
     DijkstraShortestPath shortestPath;
     shortestPath.printRoad();
 
+}
+
+void ElfUI::showAllLeters() {
+    LetterDatabase letterDatabase;
+    vector<Letter> letters = letterDatabase.GetAllLetters();
+    std::cout << "\t 1." << " Children's letters:\n";
+    int k = 0;
+    for (Letter currentLetter:letters) {
+        k++;
+        std::cout << "-------------Letter #" << k << "------------------------" << "\n";
+        std::cout << "* Child name and surname: " << currentLetter.getName() << " " << currentLetter.getSurname()
+                  << "\n";
+        std::cout << "* Child age: " << currentLetter.getAge() << "\n";
+        std::cout << "* Child city: " << currentLetter.getCity() << "\n";
+        std::cout << "* Child wishList:\n";
+        for (Gift gift:currentLetter.getWishList().getGiftList()) {
+            std::cout << "\t" << " - " << gift.getGiftName() << "\n";
+        }
+        std::cout << "* Letter color: " << currentLetter.getColor() << "\n";
+
+        std::cout << "\n";
+
+    }
 }
 

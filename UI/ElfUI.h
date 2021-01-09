@@ -15,7 +15,9 @@ class ElfUI {
 public:
     void insertNewChild();
 
-    void showChildGift();
+    void showAllLeters();
+
+    void showFinalResult();
 
 
     void showFinalRoad();

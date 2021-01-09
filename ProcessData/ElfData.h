@@ -10,6 +10,7 @@
 #include "fstream"
 #include "../DataClassesPackage/Wishlist.h"
 #include "../DataClassesPackage/Letter.h"
+#include "map"
 
 using namespace std;
 
@@ -19,9 +20,11 @@ public:
     vector<Wishlist> finalChildrenWishList;
     vector<pair<string, int>> finalChildrenCandyNumber;
     vector<pair<string, string>> finalCityList;
+    map<string, pair<float, int>> finalCoast;
 
-    int finalGirlPacks=0;
-    int finalBoyPacks=0;
+
+    int finalGirlPacks = 0;
+    int finalBoyPacks = 0;
 
 
     const vector<Wishlist> &getFinalChildrenWishList() const;
@@ -37,6 +40,8 @@ public:
     const int &getFinalGirlPacks() const;
 
     const int &getFinalBoyPacks() const;
+
+    const map<string, pair<float, int>> &getFinalCoast() const;
 };
 
 

@@ -107,6 +107,8 @@ C:/Users/danit/CLionProjects/FinalProjectPOO/ProcessData/fstream
 C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Wishlist.h
 ../DataClassesPackage/Letter.h
 C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Letter.h
+map
+C:/Users/danit/CLionProjects/FinalProjectPOO/ProcessData/map
 
 C:/Users/danit/CLionProjects/FinalProjectPOO/ProcessData/ElfProcess.h
 ProcessLetterInterface.h
@@ -155,6 +157,8 @@ C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/Cities/City.h
 C:/Users/danit/CLionProjects/FinalProjectPOO/MinimSpanningTree/ProcessRoad.h
 ../Dijkstra/DijkstraShortestPath.h
 C:/Users/danit/CLionProjects/FinalProjectPOO/Dijkstra/DijkstraShortestPath.h
+map
+C:/Users/danit/CLionProjects/FinalProjectPOO/UI/map
 
 C:/Users/danit/CLionProjects/FinalProjectPOO/UI/ElfUI.h
 iostream

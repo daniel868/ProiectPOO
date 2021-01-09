@@ -16,7 +16,7 @@ using namespace std;
 class ProcessLetterInterface {
 public:
     virtual void generateFinalElfData(Letter letter) = 0;
-
+    virtual void generateTotalCost()=0;
 };
 
 

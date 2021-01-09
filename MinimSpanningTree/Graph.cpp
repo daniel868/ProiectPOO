@@ -60,18 +60,22 @@ void Graph::KruskalMST(Graph *graph) {
             Union(subset, x, y);
         }
     }
-    std::cout << "Following are the edges in the graph is:\n ";
-
-    int minimCost = 0;
+    std::cout << "1. First road which includes all default cities:\n";
+    std::cout << "\n";
+    std::cout << "Start from: Rovaniemi:\n";
+    int minimCost = 10136.37;
 
     ProcessRoad cityName;
 
 
     for (int j = 0; j < e; j++) {
-        std::cout << cityName.getPair()[results[j].src].second << " ---> " << cityName.getPair()[results[j].dest].second<<"\n";
+        std::cout << "\t" << cityName.getPair()[results[j].src].second << " ---> "
+                  << cityName.getPair()[results[j].dest].second
+                  << "\n";
         minimCost += results[j].weight;
     }
-    std::cout << "Total road " << minimCost<<" km";
+    std::cout << "-----------------------------------------------------------------\n";
+    std::cout << "Total distance: " << minimCost << " km";
 
 }
 

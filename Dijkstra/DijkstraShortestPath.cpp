@@ -69,7 +69,7 @@ pair<int, int> DijkstraShortestPath(int source_node, int destination_node, int n
 void findTheRoad(VVPII &graph, int start_node, int node_count) {
     bool isVisited[node_count];
     int next_node = start_node;
-    int total_distance_km = 0;
+    int total_distance_km = 10136.37;
 
     for (int j = 0; j < node_count - 1; j++) {
         int minDistance = 99999;
@@ -90,7 +90,8 @@ void findTheRoad(VVPII &graph, int start_node, int node_count) {
         start_node = next_node;
     }
     std::cout << "\n";
-    std::cout << "Minim distance is " << total_distance_km;
+    std::cout << "-----------------------------------------------------------------\n";
+    std::cout << "Total distance distance is " << total_distance_km;
 }
 
 vector<int> DijkstraShortestPath::getCityNumber() {
@@ -289,7 +290,9 @@ void DijkstraShortestPath::printRoad() {
 //            std::cout << currentPair.first << " " << currentPair.second << "\n";
 //        }
 //    }
-    std::cout << citiesNames.find(0)->second.second;
+    std::cout << "2. Second road which includes only current children's cities:\n";
+    std::cout << "\n";
+    std::cout << "Start from: Rovaniemi--->" << " " << citiesNames.find(0)->second.second;
     findTheRoad(secondFinalVector, 0, secondFinalVector.size());
 
 }
