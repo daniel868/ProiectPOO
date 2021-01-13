@@ -13,14 +13,16 @@
 
 class LetterDatabase : public LetterDatabaseInterface {
 public:
-    void AddLetterToDB(Letter letter)override;
+    void AddLetterToDB(Letter letter) override;
 
-    void DeleteLetterToDB(Letter letter)override;
+    void DeleteLetterToDB(int letterId) override;
+
+    void DeleteLetterToDB(Letter letter) override;
 
     bool CheckValidData(Letter letter) override;
 
     vector<Letter> GetAllLetters() override;
-   // Letter getLetterFromDB(int letterId) override;
+
 
 };
 

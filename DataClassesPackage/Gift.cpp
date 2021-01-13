@@ -33,3 +33,7 @@ void Gift::setIsAdded(bool isAdded) {
 }
 
 Gift::Gift() {}
+
+Gift::~Gift() {
+
+}

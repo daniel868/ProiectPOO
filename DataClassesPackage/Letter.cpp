@@ -29,3 +29,7 @@ Letter::Letter() {
 
 }
 
+Letter::~Letter() {
+
+}
+

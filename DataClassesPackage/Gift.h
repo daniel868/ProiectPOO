@@ -17,6 +17,8 @@ private:
 public:
     Gift();
 
+    ~Gift();
+
     Gift(const string &giftName, float giftPrice);
 
     const string &getGiftName() const;

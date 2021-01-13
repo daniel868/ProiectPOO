@@ -12,7 +12,9 @@ class LetterDatabaseInterface {
 public:
     virtual void AddLetterToDB(Letter letter) = 0;
 
-    virtual void DeleteLetterToDB(Letter letter) = 0;
+    virtual void DeleteLetterToDB(int letterId) = 0;
+
+    virtual void DeleteLetterToDB(Letter letter)=0;
 
     virtual bool CheckValidData(Letter letter) = 0;
 

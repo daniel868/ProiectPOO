@@ -16,13 +16,9 @@ class CitiesData {
 public:
     static vector<City> FinlandToStartCities();
 
-    static vector<string>Cities();
-
     static void printCountryList();
 
     static void printBotswanaCities();
-
-    static float getDistanceBetweenCities(string x, string y);
 
 };
 

@@ -27,6 +27,7 @@ void ElfUI::showFinalResult() {
     coasts = elfProcess.getElfData().finalCoast;
 
     vector<Wishlist> wishLists = elfProcess.getElfData().finalChildrenWishList;
+    std::cout << "#########################################################\n";
     std::cout << "\t" << "2. Elf's Children final list:\n";
     for (Wishlist wishlist:wishLists) {
         float sum = 0;
@@ -44,6 +45,7 @@ void ElfUI::showFinalResult() {
     vector<pair<string, int>> candyNumber = elfProcess.getElfData().getFinalChildrenCandyNumber();
 
     std::cout << "\n";
+    std::cout << "#########################################################\n";
     std::cout << "\t" << "3. Troll's color packed:\n";
     std::cout << "- Girls: " << " " << elfProcess.getElfData().finalGirlPacks << "\n";
     std::cout << "- Boys: " << " " << elfProcess.getElfData().finalBoyPacks << "\n";
@@ -55,6 +57,7 @@ void ElfUI::showFinalResult() {
     }
 
     std::cout << "\n";
+    std::cout << "#########################################################\n";
     std::cout << "\t" << "4. Lady Christmas final's math:\n";
     float count = 0;
     for (Wishlist wishlist:wishLists) {
@@ -87,7 +90,12 @@ void ElfUI::showFinalResult() {
         }
     }
     std::cout << "\n";
-    std::cout << "\t5. Santa's travel roads:";
+    std::cout << "#########################################################\n";
+    std::cout << "\t5. Santa's travel roads:\n";
+    processCities1();
+    std::cout << "\n";
+    processCities2();
+    std::cout << "\n";
 }
 
 vector<pair<string, string>> ElfUI::childCities() {
@@ -128,18 +136,6 @@ void ElfUI::insertNewChild() {
 
 }
 
-void ElfUI::showFinalRoad() {
-    ProcessRoad processRoad;
-    City startCity = processRoad.setStartPoint();
-    processRoad.addEdgesToGraph(startCity);
-    for (auto currentPair :processRoad.getFinalCityList()) {
-        processRoad.addEdgesToGraph(City(currentPair.second, 20));
-    }
-
-    vector<Edge> finalEdge = processRoad.getEdges();
-
-    processRoad.setRoadData(processRoad.getEdges().size(), 4);
-}
 
 void ElfUI::processCities1() {
     ProcessRoad processRoad;
@@ -154,7 +150,7 @@ void ElfUI::processCities2() {
 
 }
 
-void ElfUI::showAllLeters() {
+void ElfUI::showAllLetters() {
     LetterDatabase letterDatabase;
     vector<Letter> letters = letterDatabase.GetAllLetters();
     std::cout << "\t 1." << " Children's letters:\n";
@@ -173,7 +169,6 @@ void ElfUI::showAllLeters() {
         std::cout << "* Letter color: " << currentLetter.getColor() << "\n";
 
         std::cout << "\n";
-
     }
 }
 

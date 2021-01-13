@@ -224,6 +224,12 @@
 		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/UI/LetterUI.h">
 			<Option target="FinalProjectPOO"/>
 		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/UI/MainUI.cpp">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/UI/MainUI.h">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
 		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/Utils/Util.cpp">
 			<Option target="FinalProjectPOO"/>
 		</Unit>

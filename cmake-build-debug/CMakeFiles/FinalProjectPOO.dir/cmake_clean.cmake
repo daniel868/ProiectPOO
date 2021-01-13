@@ -23,6 +23,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/FinalProjectPOO.dir/UI/AddNewLetterInterface.cpp.obj"
   "CMakeFiles/FinalProjectPOO.dir/UI/ElfUI.cpp.obj"
   "CMakeFiles/FinalProjectPOO.dir/UI/LetterUI.cpp.obj"
+  "CMakeFiles/FinalProjectPOO.dir/UI/MainUI.cpp.obj"
   "CMakeFiles/FinalProjectPOO.dir/Utils/Util.cpp.obj"
   "CMakeFiles/FinalProjectPOO.dir/main.cpp.obj"
   "FinalProjectPOO.exe"

@@ -11,20 +11,15 @@
 
 class ProcessRoad {
 private:
-    int edgeIndex = 0;
     Graph *graph;
     vector<pair<string, string>> finalCityList;
-    vector<Edge>edges;
+    vector<Edge> edges;
 public:
     void setRoadData(int E, int V);
 
     void showRoad();
 
     static vector<pair<int, string>> getPair();
-
-    City setStartPoint();
-
-    void addEdgesToGraph(const City &startCity);
 
     const vector<pair<string, string>> &getFinalCityList() const;
 

@@ -45,6 +45,7 @@ void ElfProcess::generateFinalElfData(Letter letter) {
     }
     if (finalGiftList.empty()) {
         finalGiftList.emplace_back(DefaultGift<int>(max_children_amount).getDefaultGift());
+        current_children_amount = max_children_amount;
     }
     this->candyNumber = (int) (max_children_amount - current_children_amount);
 

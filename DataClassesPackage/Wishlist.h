@@ -15,9 +15,11 @@ class Wishlist {
 private:
     string children_name;
     string children_surname;
-    vector<Gift>giftList;
+    vector<Gift> giftList;
 public:
     Wishlist();
+
+    ~Wishlist();
 
     Wishlist(const string &childrenName, const string &childrenSurname, const vector<Gift> &giftList);
 

@@ -15,12 +15,10 @@ class ElfUI {
 public:
     void insertNewChild();
 
-    void showAllLeters();
+    void showAllLetters();
 
     void showFinalResult();
 
-
-    void showFinalRoad();
 
     vector<pair<string, string>> childCities();
 

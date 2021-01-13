@@ -59,13 +59,6 @@ void ProcessRoad::showRoad(){
         graph->edge[9].dest = 4;
         graph->edge[9].weight = 654;
 
-
-        //  graph->edge = setEdges();
-//        for (int i = 0; i < edges.size(); i++) {
-//            graph->edge[i].src = edges[i].src;
-//            graph->edge[i].dest = edges[i].dest;
-//            graph->edge[i].weight = edges[i].weight;
-//        }
         graph->KruskalMST(graph);
     }
 }
@@ -80,81 +73,6 @@ vector<pair<int, string>> ProcessRoad::getPair() {
     return roadsName;
 }
 
-City ProcessRoad::setStartPoint() {
-    ElfUI elfUi;
-    vector<pair<string, string>> childCities = elfUi.childCities();
-    int numberDifferentCity = childCities.size();
-    vector<pair<string, string>>::iterator itr = childCities.begin();
-
-    for (int i = 0; i < childCities.size()-1; i++) {
-        string firstCity = childCities[i].second;
-        for (int j = i + 1; j < childCities.size(); j++) {
-            string secondCity = childCities[j].second;
-            if (firstCity == secondCity) {
-                numberDifferentCity--;
-                advance(itr, j);
-                childCities.erase(itr);
-            }
-        }
-    }
-    this->finalCityList = childCities;
-
-    float minimDistance;
-    vector<City> allCities = CitiesData::FinlandToStartCities();
-    minimDistance = allCities[0].getDistance();
-    string startCity;
-    for (pair<string, string> currentPair:childCities) {
-        if (currentPair.second == "Gaborone,Botswana" && allCities[0].getDistance() < minimDistance) {
-            minimDistance = allCities[0].getDistance();
-            startCity = allCities[0].getName();
-        }
-        if (currentPair.second == "Francistown,Botswana" && allCities[1].getDistance() < minimDistance) {
-            minimDistance = allCities[1].getDistance();
-            startCity = allCities[1].getName();
-        }
-        if (currentPair.second == "Molepolole,Botswana" && allCities[2].getDistance() < minimDistance) {
-            minimDistance = allCities[2].getDistance();
-            startCity = allCities[2].getName();
-        }
-        if (currentPair.second == "Mahalapye,Botswana" && allCities[3].getDistance() < minimDistance) {
-            minimDistance = allCities[3].getDistance();
-            startCity = allCities[3].getName();
-        }
-    }
-
-    return City(startCity, minimDistance);
-
-}
-
-void ProcessRoad::addEdgesToGraph(const City &startPoint) {
-    Edge *edge = new Edge[3];
-    vector<RoadsConnection> connection = RoadsConnection::getConnection();
-    int possibleStartPointConnection = 0;
-    for (auto currentPairConnection:connection) {
-        if (currentPairConnection.getFrom().first == startPoint.getName()) {
-            // edge[edgeIndex].src = currentPairConnection.getFrom().second;
-            possibleStartPointConnection++;
-        }
-    }
-    for (auto currentPairCity:this->getFinalCityList()) {
-        if (currentPairCity.second != startPoint.getName()) {
-            for (auto currentPairConnection:connection) {
-                if (currentPairConnection.getFrom().first == startPoint.getName() &&
-                    currentPairConnection.getTo().first == currentPairCity.second) {
-                    Edge new_edge;
-                    new_edge.src = currentPairConnection.getFrom().second;
-                    new_edge.dest = currentPairConnection.getTo().second;
-                    new_edge.weight = CitiesData::getDistanceBetweenCities(currentPairConnection.getFrom().first,
-                                                                           currentPairConnection.getTo().first);
-                    this->edges.push_back(new_edge);
-                    edgeIndex++;
-                }
-            }
-        }
-    }
-
-
-}
 
 const vector<pair<string, string>> &ProcessRoad::getFinalCityList() const {
     return finalCityList;

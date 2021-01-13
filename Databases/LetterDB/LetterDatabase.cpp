@@ -4,7 +4,10 @@
 
 #include <fstream>
 #include "LetterDatabase.h"
+#include "map"
+#include "../ChildrenDB/ChildrenDatabase.h"
 
+map<int, Letter> letterCountMap;
 
 void LetterDatabase::AddLetterToDB(Letter letter) {
     int count = 0;
@@ -28,8 +31,21 @@ void LetterDatabase::AddLetterToDB(Letter letter) {
 
 }
 
-void LetterDatabase::DeleteLetterToDB(Letter letter) {
+void LetterDatabase::DeleteLetterToDB(int letterId) {
+    GetAllLetters();
+    ofstream MyLetterDB;
+    MyLetterDB.open(LetterDatabaseName, ios::out);
+    MyLetterDB << "";
+    MyLetterDB.close();
 
+    map<int, Letter>::iterator itr;
+    for (itr = letterCountMap.begin(); itr != letterCountMap.end(); itr++) {
+        if (itr->first != letterId) {
+            AddLetterToDB(itr->second);
+        }
+    }
+    ChildrenDatabase childrenDatabase;
+    childrenDatabase.DeleteChildren(letterId);
 }
 
 bool LetterDatabase::CheckValidData(Letter letter) {
@@ -114,9 +130,14 @@ vector<Letter> LetterDatabase::GetAllLetters() {
         wishlist.setGiftList(letterGifts);
         letter.setWishList(wishlist);
 
+        letterCountMap.insert(pair<int, Letter>(stoi(stringOut[0], nullptr, 10), letter));
         existingLetters.emplace_back(letter);
     }
     LetterDatabase.close();
 
     return existingLetters;
+}
+
+void LetterDatabase::DeleteLetterToDB(Letter letter) {
+
 }

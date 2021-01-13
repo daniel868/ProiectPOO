@@ -46,3 +46,7 @@ void Wishlist::removeGift() {
 }
 
 Wishlist::Wishlist() {}
+
+Wishlist::~Wishlist() {
+
+}

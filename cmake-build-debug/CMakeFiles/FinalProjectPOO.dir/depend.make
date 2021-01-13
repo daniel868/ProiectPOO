@@ -47,6 +47,8 @@ CMakeFiles/FinalProjectPOO.dir/Databases/LetterDB/LetterDatabase.cpp.obj: ../Dat
 CMakeFiles/FinalProjectPOO.dir/Databases/LetterDB/LetterDatabase.cpp.obj: ../DataClassesPackage/Gift.h
 CMakeFiles/FinalProjectPOO.dir/Databases/LetterDB/LetterDatabase.cpp.obj: ../DataClassesPackage/Letter.h
 CMakeFiles/FinalProjectPOO.dir/Databases/LetterDB/LetterDatabase.cpp.obj: ../DataClassesPackage/Wishlist.h
+CMakeFiles/FinalProjectPOO.dir/Databases/LetterDB/LetterDatabase.cpp.obj: ../Databases/ChildrenDB/ChildrenDBInterface.h
+CMakeFiles/FinalProjectPOO.dir/Databases/LetterDB/LetterDatabase.cpp.obj: ../Databases/ChildrenDB/ChildrenDatabase.h
 CMakeFiles/FinalProjectPOO.dir/Databases/LetterDB/LetterDatabase.cpp.obj: ../Databases/GiftStoreData.h
 CMakeFiles/FinalProjectPOO.dir/Databases/LetterDB/LetterDatabase.cpp.obj: ../Databases/LetterDB/LetterDatabase.cpp
 CMakeFiles/FinalProjectPOO.dir/Databases/LetterDB/LetterDatabase.cpp.obj: ../Databases/LetterDB/LetterDatabase.h
@@ -173,6 +175,18 @@ CMakeFiles/FinalProjectPOO.dir/UI/LetterUI.cpp.obj: ../UI/AddNewLetterInterface.
 CMakeFiles/FinalProjectPOO.dir/UI/LetterUI.cpp.obj: ../UI/LetterUI.cpp
 CMakeFiles/FinalProjectPOO.dir/UI/LetterUI.cpp.obj: ../UI/LetterUI.h
 
+CMakeFiles/FinalProjectPOO.dir/UI/MainUI.cpp.obj: ../DataClassesPackage/Children.h
+CMakeFiles/FinalProjectPOO.dir/UI/MainUI.cpp.obj: ../DataClassesPackage/Gift.h
+CMakeFiles/FinalProjectPOO.dir/UI/MainUI.cpp.obj: ../DataClassesPackage/Letter.h
+CMakeFiles/FinalProjectPOO.dir/UI/MainUI.cpp.obj: ../DataClassesPackage/Wishlist.h
+CMakeFiles/FinalProjectPOO.dir/UI/MainUI.cpp.obj: ../Databases/GiftStoreData.h
+CMakeFiles/FinalProjectPOO.dir/UI/MainUI.cpp.obj: ../Databases/LetterDB/LetterDatabase.h
+CMakeFiles/FinalProjectPOO.dir/UI/MainUI.cpp.obj: ../Databases/LetterDB/LetterDatabaseInterface.h
+CMakeFiles/FinalProjectPOO.dir/UI/MainUI.cpp.obj: ../UI/ElfUI.h
+CMakeFiles/FinalProjectPOO.dir/UI/MainUI.cpp.obj: ../UI/MainUI.cpp
+CMakeFiles/FinalProjectPOO.dir/UI/MainUI.cpp.obj: ../UI/MainUI.h
+CMakeFiles/FinalProjectPOO.dir/UI/MainUI.cpp.obj: ../Utils/Util.h
+
 CMakeFiles/FinalProjectPOO.dir/Utils/Util.cpp.obj: ../DataClassesPackage/Gift.h
 CMakeFiles/FinalProjectPOO.dir/Utils/Util.cpp.obj: ../MinimSpanningTree/Edge.h
 CMakeFiles/FinalProjectPOO.dir/Utils/Util.cpp.obj: ../Utils/Util.cpp
@@ -200,6 +214,7 @@ CMakeFiles/FinalProjectPOO.dir/main.cpp.obj: ../ProcessData/ProcessLetterInterfa
 CMakeFiles/FinalProjectPOO.dir/main.cpp.obj: ../UI/AddNewLetterInterface.h
 CMakeFiles/FinalProjectPOO.dir/main.cpp.obj: ../UI/ElfUI.h
 CMakeFiles/FinalProjectPOO.dir/main.cpp.obj: ../UI/LetterUI.h
+CMakeFiles/FinalProjectPOO.dir/main.cpp.obj: ../UI/MainUI.h
 CMakeFiles/FinalProjectPOO.dir/main.cpp.obj: ../Utils/Util.h
 CMakeFiles/FinalProjectPOO.dir/main.cpp.obj: ../main.cpp
 

@@ -51,3 +51,7 @@ Children::Children(const string &name, const string &surname, const string &city
 Children::Children() {
 
 }
+
+Children::~Children() {
+
+}

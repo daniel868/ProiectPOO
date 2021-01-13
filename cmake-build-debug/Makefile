@@ -790,6 +790,33 @@ UI/LetterUI.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FinalProjectPOO.dir\build.make CMakeFiles/FinalProjectPOO.dir/UI/LetterUI.cpp.s
 .PHONY : UI/LetterUI.cpp.s
 
+UI/MainUI.obj: UI/MainUI.cpp.obj
+
+.PHONY : UI/MainUI.obj
+
+# target to build an object file
+UI/MainUI.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FinalProjectPOO.dir\build.make CMakeFiles/FinalProjectPOO.dir/UI/MainUI.cpp.obj
+.PHONY : UI/MainUI.cpp.obj
+
+UI/MainUI.i: UI/MainUI.cpp.i
+
+.PHONY : UI/MainUI.i
+
+# target to preprocess a source file
+UI/MainUI.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FinalProjectPOO.dir\build.make CMakeFiles/FinalProjectPOO.dir/UI/MainUI.cpp.i
+.PHONY : UI/MainUI.cpp.i
+
+UI/MainUI.s: UI/MainUI.cpp.s
+
+.PHONY : UI/MainUI.s
+
+# target to generate assembly for a file
+UI/MainUI.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FinalProjectPOO.dir\build.make CMakeFiles/FinalProjectPOO.dir/UI/MainUI.cpp.s
+.PHONY : UI/MainUI.cpp.s
+
 Utils/Util.obj: Utils/Util.cpp.obj
 
 .PHONY : Utils/Util.obj
@@ -925,6 +952,9 @@ help:
 	@echo ... UI/LetterUI.obj
 	@echo ... UI/LetterUI.i
 	@echo ... UI/LetterUI.s
+	@echo ... UI/MainUI.obj
+	@echo ... UI/MainUI.i
+	@echo ... UI/MainUI.s
 	@echo ... Utils/Util.obj
 	@echo ... Utils/Util.i
 	@echo ... Utils/Util.s

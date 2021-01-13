@@ -12,8 +12,13 @@
 class ChildrenDatabase : public ChildrenDBInterface {
 public:
     void InsertChildren(Children children) override;
+
+    void DeleteChildren(int childrenIn) override;
+
     void DeleteChildren(Children children) override;
+
     vector<Children> GetAllChildren() override;
+
     bool checkChildrenData(Children children) override;
 };
 

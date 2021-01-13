@@ -12,17 +12,14 @@
 #include "Databases/DefaultGift.h"
 #include "UI/ElfUI.h"
 #include "Dijkstra/DijkstraShortestPath.h"
+#include "UI/MainUI.h"
 
 
 int main() {
-    ElfUI elfUi;
-    elfUi.showAllLeters();
-    elfUi.showFinalResult();
-    std::cout << "\n";
-    elfUi.processCities1();
-    std::cout << "\n";
-    elfUi.processCities2();
-
+//    ChildrenDatabase childrenDatabase;
+    //childrenDatabase.DeleteChildren(2);
+    MainUI mainUi;
+    mainUi.startProgram();
 }
 
 

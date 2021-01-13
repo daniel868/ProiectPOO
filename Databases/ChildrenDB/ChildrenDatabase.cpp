@@ -4,6 +4,9 @@
 
 #include "ChildrenDatabase.h"
 #include "../../Utils/Util.h"
+#include "map"
+
+map<int, Children> childrenMapCount;
 
 void ChildrenDatabase::InsertChildren(Children children) {
     int count = 0;
@@ -23,8 +26,18 @@ void ChildrenDatabase::InsertChildren(Children children) {
     MyChildDatabase.close();
 }
 
-void ChildrenDatabase::DeleteChildren(Children children) {
-
+void ChildrenDatabase::DeleteChildren(int childrenID) {
+    GetAllChildren();
+    ofstream ChildrenDB;
+    ChildrenDB.open(ChildrenDatabaseName, ios::out);
+    ChildrenDB << "";
+    ChildrenDB.close();
+    map<int, Children>::iterator itr;
+    for (itr = childrenMapCount.begin(); itr != childrenMapCount.end(); itr++) {
+        if (itr->first != childrenID) {
+            InsertChildren(itr->second);
+        }
+    }
 }
 
 vector<Children> ChildrenDatabase::GetAllChildren() {
@@ -45,6 +58,8 @@ vector<Children> ChildrenDatabase::GetAllChildren() {
         child.setIsGood(stoi(stringOut[5], nullptr, 10));
 
         children.emplace_back(child);
+
+        childrenMapCount.insert(pair<int, Children>(stoi(stringOut[0], nullptr, 10), child));
     }
     MyChildDatabase_in.close();
     return children;
@@ -85,4 +100,8 @@ bool ChildrenDatabase::checkChildrenData(Children children) {
         std::cout << err << "\n";
     }
     return isSafe;
+}
+
+void ChildrenDatabase::DeleteChildren(Children children) {
+
 }

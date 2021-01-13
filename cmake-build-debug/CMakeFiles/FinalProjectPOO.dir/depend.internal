@@ -48,6 +48,8 @@ CMakeFiles/FinalProjectPOO.dir/Databases/LetterDB/LetterDatabase.cpp.obj
  C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Gift.h
  C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Letter.h
  C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Wishlist.h
+ C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/ChildrenDB/ChildrenDBInterface.h
+ C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/ChildrenDB/ChildrenDatabase.h
  C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/GiftStoreData.h
  C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/LetterDB/LetterDatabase.cpp
  C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/LetterDB/LetterDatabase.h
@@ -173,6 +175,18 @@ CMakeFiles/FinalProjectPOO.dir/UI/LetterUI.cpp.obj
  C:/Users/danit/CLionProjects/FinalProjectPOO/UI/AddNewLetterInterface.h
  C:/Users/danit/CLionProjects/FinalProjectPOO/UI/LetterUI.cpp
  C:/Users/danit/CLionProjects/FinalProjectPOO/UI/LetterUI.h
+CMakeFiles/FinalProjectPOO.dir/UI/MainUI.cpp.obj
+ C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Children.h
+ C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Gift.h
+ C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Letter.h
+ C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Wishlist.h
+ C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/GiftStoreData.h
+ C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/LetterDB/LetterDatabase.h
+ C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/LetterDB/LetterDatabaseInterface.h
+ C:/Users/danit/CLionProjects/FinalProjectPOO/UI/ElfUI.h
+ C:/Users/danit/CLionProjects/FinalProjectPOO/UI/MainUI.cpp
+ C:/Users/danit/CLionProjects/FinalProjectPOO/UI/MainUI.h
+ C:/Users/danit/CLionProjects/FinalProjectPOO/Utils/Util.h
 CMakeFiles/FinalProjectPOO.dir/Utils/Util.cpp.obj
  C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Gift.h
  C:/Users/danit/CLionProjects/FinalProjectPOO/MinimSpanningTree/Edge.h
@@ -201,5 +215,6 @@ CMakeFiles/FinalProjectPOO.dir/main.cpp.obj
  C:/Users/danit/CLionProjects/FinalProjectPOO/UI/AddNewLetterInterface.h
  C:/Users/danit/CLionProjects/FinalProjectPOO/UI/ElfUI.h
  C:/Users/danit/CLionProjects/FinalProjectPOO/UI/LetterUI.h
+ C:/Users/danit/CLionProjects/FinalProjectPOO/UI/MainUI.h
  C:/Users/danit/CLionProjects/FinalProjectPOO/Utils/Util.h
  C:/Users/danit/CLionProjects/FinalProjectPOO/main.cpp

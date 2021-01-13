@@ -28,6 +28,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/danit/CLionProjects/FinalProjectPOO/UI/AddNewLetterInterface.cpp" "C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/CMakeFiles/FinalProjectPOO.dir/UI/AddNewLetterInterface.cpp.obj"
   "C:/Users/danit/CLionProjects/FinalProjectPOO/UI/ElfUI.cpp" "C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/CMakeFiles/FinalProjectPOO.dir/UI/ElfUI.cpp.obj"
   "C:/Users/danit/CLionProjects/FinalProjectPOO/UI/LetterUI.cpp" "C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/CMakeFiles/FinalProjectPOO.dir/UI/LetterUI.cpp.obj"
+  "C:/Users/danit/CLionProjects/FinalProjectPOO/UI/MainUI.cpp" "C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/CMakeFiles/FinalProjectPOO.dir/UI/MainUI.cpp.obj"
   "C:/Users/danit/CLionProjects/FinalProjectPOO/Utils/Util.cpp" "C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/CMakeFiles/FinalProjectPOO.dir/Utils/Util.cpp.obj"
   "C:/Users/danit/CLionProjects/FinalProjectPOO/main.cpp" "C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/CMakeFiles/FinalProjectPOO.dir/main.cpp.obj"
   )

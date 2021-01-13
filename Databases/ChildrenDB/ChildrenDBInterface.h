@@ -18,6 +18,8 @@ class ChildrenDBInterface {
 public:
     virtual void InsertChildren(Children children) = 0;
 
+    virtual void DeleteChildren(int childrenId) = 0;
+
     virtual void DeleteChildren(Children children) = 0;
 
     virtual vector<Children> GetAllChildren() = 0;

@@ -26,6 +26,8 @@ public:
     void setWishList(const Wishlist &wishList);
 
     Letter();
+
+    ~Letter();
 };
 
 

@@ -38,6 +38,8 @@ public:
     void setIsGood(bool isGood);
 
     Children();
+
+    ~Children();
 };
 
 

@@ -1,4 +1,5 @@
 0 Vasile Ion 12 Gaborone,Botswana 1
 1 Alexandra Vasile 14 Maun,Botswana 1
-2 Andrei Alexandru 10 Mahalapye,Botswana 1
-3 Vasile Ana 1 Mahalapye,Botswana 0
+2 Vasile Ana 1 Mahalapye,Botswana 0
+3 Vasile Gheorghe 10 Molepolole,Botswana 1
+4 Andrei Ioan 10 Francistown,Botswana 1
