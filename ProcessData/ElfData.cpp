@@ -5,6 +5,8 @@
 #include "ElfData.h"
 #include "../Utils/Util.h"
 
+//TODO: get and set for containing items
+
 const vector<Wishlist> &ElfData::getFinalChildrenWishList() const {
     return finalChildrenWishList;
 }

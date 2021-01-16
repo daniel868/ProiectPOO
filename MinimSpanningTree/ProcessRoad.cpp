@@ -9,10 +9,14 @@
 #include "../Databases/Cities/CitiesData.h"
 #include "RoadsConnection.h"
 
+//TODO: set the data for graph (number of vertices and number of edge)
 void ProcessRoad::setRoadData(int E, int V) {
     this->graph = new Graph(V, E);
 }
 
+
+//TODO: add edges to the graph
+//TODO: based on that edge, generate the final results
 void ProcessRoad::showRoad(){
     Graph *graph = this->graph;
     if (graph != nullptr) {
@@ -63,6 +67,7 @@ void ProcessRoad::showRoad(){
     }
 }
 
+//TODO: in order to display cities' s name -> map into a pair vector and return that list
 vector<pair<int, string>> ProcessRoad::getPair() {
     vector<pair<int, string>> roadsName;
     roadsName.emplace_back(pair<int, string>(0, "Molepolole,Botswana"));
@@ -74,6 +79,7 @@ vector<pair<int, string>> ProcessRoad::getPair() {
 }
 
 
+//get methods that are unused in final
 const vector<pair<string, string>> &ProcessRoad::getFinalCityList() const {
     return finalCityList;
 }

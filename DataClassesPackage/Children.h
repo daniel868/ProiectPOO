@@ -9,6 +9,10 @@
 
 using namespace std;
 
+//TODO: main class for fetching the data from files
+//TODO: contains all useful data for a children
+
+
 class Children {
 private:
     string name, surname, city;

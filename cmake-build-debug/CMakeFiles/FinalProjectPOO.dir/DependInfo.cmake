@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Gift.cpp" "C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/CMakeFiles/FinalProjectPOO.dir/DataClassesPackage/Gift.cpp.obj"
   "C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Letter.cpp" "C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/CMakeFiles/FinalProjectPOO.dir/DataClassesPackage/Letter.cpp.obj"
   "C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Wishlist.cpp" "C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/CMakeFiles/FinalProjectPOO.dir/DataClassesPackage/Wishlist.cpp.obj"
+  "C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/BuilderResults.cpp" "C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/CMakeFiles/FinalProjectPOO.dir/Databases/BuilderResults.cpp.obj"
   "C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/ChildrenDB/ChildrenDBInterface.cpp" "C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/CMakeFiles/FinalProjectPOO.dir/Databases/ChildrenDB/ChildrenDBInterface.cpp.obj"
   "C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/ChildrenDB/ChildrenDatabase.cpp" "C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/CMakeFiles/FinalProjectPOO.dir/Databases/ChildrenDB/ChildrenDatabase.cpp.obj"
   "C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/Cities/CitiesData.cpp" "C:/Users/danit/CLionProjects/FinalProjectPOO/cmake-build-debug/CMakeFiles/FinalProjectPOO.dir/Databases/Cities/CitiesData.cpp.obj"

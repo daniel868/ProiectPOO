@@ -10,6 +10,7 @@
 
 using namespace std;
 
+//TODO: all possible gift are stored here
 vector<Gift> GiftStoreData::getStoreList() {
     vector<Gift> giftList;
     giftList.emplace_back(Gift("Remote_Car_Control", 20.5f));
@@ -40,10 +41,13 @@ vector<pair<Gift, bool>> GiftStoreData::getStock() {
     return giftStock;
 }
 
+//TODO: function that return random bool values
 bool GiftStoreData::randomBool() {
     return rand() > (RAND_MAX / 2);
 }
 
+//TODO: function that check a gift's stock and return a bool value
+//TODO: use for creating child's final wishlist
 bool GiftStoreData::checkGiftStock(Gift gift) {
     bool isStock = false;
     for (pair<Gift, bool> currentPair:getStock()) {

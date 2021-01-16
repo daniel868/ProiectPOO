@@ -11,6 +11,8 @@
 
 using namespace std;
 
+//TODO: handle all gifts and real time gift stock
+//TODO: use for choosing childrenGift
 
 class GiftStoreData {
 public:

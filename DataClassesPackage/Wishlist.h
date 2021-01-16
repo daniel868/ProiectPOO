@@ -11,6 +11,9 @@
 
 using namespace std;
 
+//TODO: store children's list of gift by using a simple vector
+//TODO: for identify more easily, it contains 2 string field (name and surname)
+
 class Wishlist {
 private:
     string children_name;

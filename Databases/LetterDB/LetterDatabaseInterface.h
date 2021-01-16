@@ -8,6 +8,8 @@
 
 #include "../../DataClassesPackage/Letter.h"
 
+//TODO: virtual abstract class for Letter database (interface)
+
 class LetterDatabaseInterface {
 public:
     virtual void AddLetterToDB(Letter letter) = 0;

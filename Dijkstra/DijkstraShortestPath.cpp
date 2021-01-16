@@ -14,14 +14,22 @@
 
 using namespace std;
 
+//TODO: function class that build optimal path, but using the existing roads
+//TODO: as example, in DB are children only from X, or from X and Y cities
+//TODO: we don't need to use MST for all default graph, we build a new graph and use Dijkstra Algorithm
+
+//TODO: use for algorithm
 typedef pair<int, unsigned long long> PII;
 typedef vector<PII> VPII;
 typedef vector<VPII> VVPII;
 
 map<int, pair<int, string>> citiesNames;
 
+//TODO: get pair int-string (cities_Id-cities_Name)
 vector<pair<int, string>> citiesPair = ProcessRoad::getPair();
 
+//TODO: main DikstraAlgorithm that find the minimal distance between source_node -> destination_node)
+//TODO: return the results as type of pair<int,int>, where: first = distance,second = next_node
 pair<int, int> DijkstraShortestPath(int source_node, int destination_node, int node_count, VVPII &graph) {
 
     // Assume that the distance from source_node to other nodes is infinite
@@ -66,6 +74,9 @@ pair<int, int> DijkstraShortestPath(int source_node, int destination_node, int n
     return pair<int, int>(dist[destination_node], destination_node);
 }
 
+//TODO: algorithm that use Greedy method to build optimal path using Dijkstra Algorithm
+//TODO: use DijkstraAlgorithm apply for every existing node in graph
+//TODO: use a bool vector to keep evidence for every node
 void findTheRoad(VVPII &graph, int start_node, int node_count) {
     bool isVisited[node_count];
     int next_node = start_node;
@@ -93,6 +104,7 @@ void findTheRoad(VVPII &graph, int start_node, int node_count) {
     std::cout << "-----------------------------------------------------------------\n";
     std::cout << "Total distance distance is " << total_distance_km;
 }
+
 
 vector<int> DijkstraShortestPath::getCityNumber() {
     bool city1 = false, city2 = false, city3 = false, city4 = false, city5 = false;
@@ -127,6 +139,10 @@ vector<int> DijkstraShortestPath::getCityNumber() {
 
 }
 
+//TODO: based on the main road graph, this algorithm create the graph that contains only roads from letter DB
+//TODO: it's like an adaptive graph , based on DB information
+//TODO: maybe the difficult task that I faced for this project
+//TODO: function that print cities order
 void DijkstraShortestPath::printRoad() {
     vector<VPII> graph1;
     VPII a0 = {

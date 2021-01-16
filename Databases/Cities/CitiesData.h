@@ -11,6 +11,8 @@
 
 using namespace std;
 
+//TODO: static class for printing cities
+//TODO: returns Botswana's cities
 
 class CitiesData {
 public:

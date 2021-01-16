@@ -9,6 +9,7 @@
 
 using namespace std;
 
+//TODO: use in MST Algorithm in order to represent graph edge (start/dest) and weight
 
 class Edge {
 public:

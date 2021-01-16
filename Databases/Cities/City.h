@@ -9,6 +9,9 @@
 
 using namespace std;
 
+//TODO: data class to handle a city information
+//TODO: helps in MSP and Dijkstra's Algorithms
+
 class City {
 private:
     string name;

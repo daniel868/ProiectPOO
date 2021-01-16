@@ -11,13 +11,19 @@
 #include "../Databases/DefaultGift.h"
 #include "../Databases/GiftStoreData.h"
 
+//TODO: Class that process all information from DB (not included cities)
+//TODO: Use ElfData class to store all processed information
+//TODO: use ProcessLetterInterface
+
 class ElfProcess : public ProcessLetterInterface {
 private:
     int candyNumber;
     ElfData elfData;
 public:
     void generateFinalElfData(Letter letter) override;
+
     void generateTotalCost() override;
+
     const ElfData &getElfData() const;
 };
 

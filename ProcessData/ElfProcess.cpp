@@ -8,6 +8,11 @@
 #include "../Utils/Util.h"
 #include "map"
 
+//TODO: check and calculate the amount ($)  for every child based on good/bad
+//TODO: check every child wishList and based on stock and amount, elf's add gift to the final list
+//TODO: after adding the gift to final list, it's calculate the difference between amount and actual gift list cost
+//TODO: based on difference, it's calculate the amount of candies for every child
+//TODO: final, all coast are added to elfData class
 
 void ElfProcess::generateFinalElfData(Letter letter) {
     bool isdefaultGift = false, addCoal = false;
@@ -72,6 +77,9 @@ const ElfData &ElfProcess::getElfData() const {
     return elfData;
 }
 
+
+//TODO: function that put together gift costs and number of candies for every child
+//TODO: store all into a map using as key - child name
 void ElfProcess::generateTotalCost() {
     map<string, pair<float, int>> finalCoasts;
     for (auto currentWishlist:this->elfData.getFinalChildrenWishList()) {

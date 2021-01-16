@@ -14,6 +14,8 @@ using namespace std;
 
 #include "vector"
 
+//TODO: virtual abstract class for children database (interface)
+
 class ChildrenDBInterface {
 public:
     virtual void InsertChildren(Children children) = 0;

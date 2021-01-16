@@ -6,8 +6,12 @@
 #include "../../Utils/Util.h"
 #include "map"
 
+
+//TODO: implementation for database's methods
+
 map<int, Children> childrenMapCount;
 
+//TODO: insert a new child in DB
 void ChildrenDatabase::InsertChildren(Children children) {
     int count = 0;
     ifstream MyChildDatabase_in;
@@ -26,6 +30,7 @@ void ChildrenDatabase::InsertChildren(Children children) {
     MyChildDatabase.close();
 }
 
+//TODO: delete a child from DB by ID
 void ChildrenDatabase::DeleteChildren(int childrenID) {
     GetAllChildren();
     ofstream ChildrenDB;
@@ -40,6 +45,7 @@ void ChildrenDatabase::DeleteChildren(int childrenID) {
     }
 }
 
+//TODO: methods that returns all children from DB
 vector<Children> ChildrenDatabase::GetAllChildren() {
     vector<Children> children;
 
@@ -65,6 +71,7 @@ vector<Children> ChildrenDatabase::GetAllChildren() {
     return children;
 }
 
+//TODO : methods that check the children data before inserting into DB
 bool ChildrenDatabase::checkChildrenData(Children children) {
     bool isSafe = true;
     try {

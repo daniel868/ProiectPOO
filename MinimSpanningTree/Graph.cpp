@@ -6,20 +6,21 @@
 #include "Graph.h"
 #include "ProcessRoad.h"
 
+//TODO: constructor that set the number of vertices and edge in a graph
 Graph::Graph(int v, int e) {
     this->V = v;
     this->E = e;
     edge = new Edge[E];
 }
 
-
+//TODO: recursive function that check the MST do not contain cycles
 int Graph::find(Subset *subset, int i) {
     if (subset[i].parent != i) {
         subset[i].parent = find(subset, subset[i].parent);
     }
     return subset[i].parent;
 }
-
+//TODO: function which , based on find() Function, build the final MST
 void Graph::Union(Subset *subset, int x, int y) {
     int xRoot = find(subset, x);
     int yRoot = find(subset, y);
@@ -34,7 +35,7 @@ void Graph::Union(Subset *subset, int x, int y) {
     }
 }
 
-
+//TODO: main graph algorithm,KruskalAlgorithm, that provide the final results and display it
 void Graph::KruskalMST(Graph *graph) {
     int V = graph->V;
     Edge results[V];

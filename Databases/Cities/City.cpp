@@ -3,6 +3,8 @@
 //
 
 #include "City.h"
+//TODO: get and set for City class items
+
 
 City::City(const string &name, float distance) : name(name), distance(distance) {
 

@@ -7,6 +7,9 @@
 
 #include "../DataClassesPackage/Gift.h"
 
+//TODO: template class that generate default Gifts for 100$ and 10$ gift
+//TODO: generate by using int type
+
 template<class T>
 class DefaultGift {
 private:

@@ -10,9 +10,13 @@
 #include "Subset.h"
 #include "../Utils/Util.h"
 
+//TODO: Main Class for MST Algorithm
+//TODO: Method's that calculate the best solution for graph
+
 class Graph {
 public:
     int V, E;
+
     Edge *edge;
 
     Graph(int v, int e);

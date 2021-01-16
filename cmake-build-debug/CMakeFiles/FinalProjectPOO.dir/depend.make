@@ -17,6 +17,17 @@ CMakeFiles/FinalProjectPOO.dir/DataClassesPackage/Wishlist.cpp.obj: ../DataClass
 CMakeFiles/FinalProjectPOO.dir/DataClassesPackage/Wishlist.cpp.obj: ../DataClassesPackage/Wishlist.cpp
 CMakeFiles/FinalProjectPOO.dir/DataClassesPackage/Wishlist.cpp.obj: ../DataClassesPackage/Wishlist.h
 
+CMakeFiles/FinalProjectPOO.dir/Databases/BuilderResults.cpp.obj: ../DataClassesPackage/Children.h
+CMakeFiles/FinalProjectPOO.dir/Databases/BuilderResults.cpp.obj: ../DataClassesPackage/Gift.h
+CMakeFiles/FinalProjectPOO.dir/Databases/BuilderResults.cpp.obj: ../DataClassesPackage/Letter.h
+CMakeFiles/FinalProjectPOO.dir/Databases/BuilderResults.cpp.obj: ../DataClassesPackage/Wishlist.h
+CMakeFiles/FinalProjectPOO.dir/Databases/BuilderResults.cpp.obj: ../Databases/BuilderResults.cpp
+CMakeFiles/FinalProjectPOO.dir/Databases/BuilderResults.cpp.obj: ../Databases/BuilderResults.h
+CMakeFiles/FinalProjectPOO.dir/Databases/BuilderResults.cpp.obj: ../Databases/GiftStoreData.h
+CMakeFiles/FinalProjectPOO.dir/Databases/BuilderResults.cpp.obj: ../Databases/LetterDB/LetterDatabase.h
+CMakeFiles/FinalProjectPOO.dir/Databases/BuilderResults.cpp.obj: ../Databases/LetterDB/LetterDatabaseInterface.h
+CMakeFiles/FinalProjectPOO.dir/Databases/BuilderResults.cpp.obj: ../Utils/Util.h
+
 CMakeFiles/FinalProjectPOO.dir/Databases/ChildrenDB/ChildrenDBInterface.cpp.obj: ../DataClassesPackage/Children.h
 CMakeFiles/FinalProjectPOO.dir/Databases/ChildrenDB/ChildrenDBInterface.cpp.obj: ../Databases/ChildrenDB/ChildrenDBInterface.cpp
 CMakeFiles/FinalProjectPOO.dir/Databases/ChildrenDB/ChildrenDBInterface.cpp.obj: ../Databases/ChildrenDB/ChildrenDBInterface.h
@@ -143,6 +154,7 @@ CMakeFiles/FinalProjectPOO.dir/UI/ElfUI.cpp.obj: ../DataClassesPackage/Children.
 CMakeFiles/FinalProjectPOO.dir/UI/ElfUI.cpp.obj: ../DataClassesPackage/Gift.h
 CMakeFiles/FinalProjectPOO.dir/UI/ElfUI.cpp.obj: ../DataClassesPackage/Letter.h
 CMakeFiles/FinalProjectPOO.dir/UI/ElfUI.cpp.obj: ../DataClassesPackage/Wishlist.h
+CMakeFiles/FinalProjectPOO.dir/UI/ElfUI.cpp.obj: ../Databases/BuilderResults.h
 CMakeFiles/FinalProjectPOO.dir/UI/ElfUI.cpp.obj: ../Databases/ChildrenDB/ChildrenDBInterface.h
 CMakeFiles/FinalProjectPOO.dir/UI/ElfUI.cpp.obj: ../Databases/ChildrenDB/ChildrenDatabase.h
 CMakeFiles/FinalProjectPOO.dir/UI/ElfUI.cpp.obj: ../Databases/Cities/City.h
@@ -196,6 +208,7 @@ CMakeFiles/FinalProjectPOO.dir/main.cpp.obj: ../DataClassesPackage/Children.h
 CMakeFiles/FinalProjectPOO.dir/main.cpp.obj: ../DataClassesPackage/Gift.h
 CMakeFiles/FinalProjectPOO.dir/main.cpp.obj: ../DataClassesPackage/Letter.h
 CMakeFiles/FinalProjectPOO.dir/main.cpp.obj: ../DataClassesPackage/Wishlist.h
+CMakeFiles/FinalProjectPOO.dir/main.cpp.obj: ../Databases/BuilderResults.h
 CMakeFiles/FinalProjectPOO.dir/main.cpp.obj: ../Databases/ChildrenDB/ChildrenDBInterface.h
 CMakeFiles/FinalProjectPOO.dir/main.cpp.obj: ../Databases/ChildrenDB/ChildrenDatabase.h
 CMakeFiles/FinalProjectPOO.dir/main.cpp.obj: ../Databases/Cities/City.h

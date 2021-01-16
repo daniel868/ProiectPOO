@@ -3,7 +3,7 @@
 //
 
 #include "CitiesData.h"
-
+//TODO: distance between Finland and Botswana's cities
 vector<City> CitiesData::FinlandToStartCities() {
     vector<City> cities;
     cities.emplace_back(City("Gaborone,Botswana", 10136.37));
@@ -15,10 +15,12 @@ vector<City> CitiesData::FinlandToStartCities() {
 
 }
 
+//TODO: option country list
 void CitiesData::printCountryList() {
     std::cout << "1. Botswana:\n";
 }
 
+//TODO: UI Botswana Cities
 void CitiesData::printBotswanaCities() {
     vector<City> cities;
     cities.emplace_back(City("Gaborone", 10136.37));

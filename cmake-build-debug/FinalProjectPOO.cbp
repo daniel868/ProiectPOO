@@ -104,6 +104,12 @@
 		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Wishlist.h">
 			<Option target="FinalProjectPOO"/>
 		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/BuilderResults.cpp">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
+		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/BuilderResults.h">
+			<Option target="FinalProjectPOO"/>
+		</Unit>
 		<Unit filename="C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/ChildrenDB/ChildrenDBInterface.cpp">
 			<Option target="FinalProjectPOO"/>
 		</Unit>

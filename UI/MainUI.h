@@ -7,7 +7,8 @@
 
 #include "iostream"
 using namespace std;
-
+//TODO: class that handle user operation
+//TODO: display available operation
 
 class MainUI {
 public:

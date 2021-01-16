@@ -8,7 +8,7 @@
 
 #include "Graph.h"
 #include "../Databases/Cities/City.h"
-
+//TODO: class that set data for MST and process the data
 class ProcessRoad {
 private:
     Graph *graph;

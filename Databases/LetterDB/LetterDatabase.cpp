@@ -7,8 +7,11 @@
 #include "map"
 #include "../ChildrenDB/ChildrenDatabase.h"
 
+//TODO: implementation for database's methods
 map<int, Letter> letterCountMap;
 
+
+//TODO: insert a new child in DB
 void LetterDatabase::AddLetterToDB(Letter letter) {
     int count = 0;
     ifstream MyLetterDB_in;
@@ -31,6 +34,7 @@ void LetterDatabase::AddLetterToDB(Letter letter) {
 
 }
 
+//TODO: delete a child from DB by ID
 void LetterDatabase::DeleteLetterToDB(int letterId) {
     GetAllLetters();
     ofstream MyLetterDB;
@@ -48,6 +52,7 @@ void LetterDatabase::DeleteLetterToDB(int letterId) {
     childrenDatabase.DeleteChildren(letterId);
 }
 
+//TODO : methods that check the Letter data before inserting into DB
 bool LetterDatabase::CheckValidData(Letter letter) {
     bool isSafe = true;
     try {
@@ -94,6 +99,7 @@ bool LetterDatabase::CheckValidData(Letter letter) {
     return isSafe;
 }
 
+//TODO: methods that returns all letters from DB
 vector<Letter> LetterDatabase::GetAllLetters() {
     vector<Letter> existingLetters;
     ifstream LetterDatabase;

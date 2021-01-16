@@ -4,6 +4,8 @@
 
 #include "Children.h"
 
+//TODO: get and set methods for children class parameters
+
 const string &Children::getName() const {
     return name;
 }

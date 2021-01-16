@@ -4,6 +4,7 @@
 
 #include "Letter.h"
 
+//TODO: get and set for letter class parameters
 const string &Letter::getColor() const {
     return color;
 }

@@ -12,6 +12,7 @@
 
 using namespace std;
 
+//TODO: LetterProcessInterface used with ElfProcess class
 
 class ProcessLetterInterface {
 public:

@@ -13,11 +13,10 @@
 #include "UI/ElfUI.h"
 #include "Dijkstra/DijkstraShortestPath.h"
 #include "UI/MainUI.h"
+#include "Databases/BuilderResults.h"
 
 
 int main() {
-//    ChildrenDatabase childrenDatabase;
-    //childrenDatabase.DeleteChildren(2);
     MainUI mainUi;
     mainUi.startProgram();
 }

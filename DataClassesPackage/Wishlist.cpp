@@ -4,6 +4,8 @@
 
 #include "Wishlist.h"
 
+//TODO: get and set methods for WishList class
+
 Wishlist::Wishlist(const string &childrenName, const string &childrenSurname, const vector<Gift> &giftList)
         : children_name(childrenName), children_surname(childrenSurname), giftList(giftList) {
 

@@ -9,6 +9,9 @@
 #include "Children.h"
 #include "Wishlist.h"
 
+//TODO: extended form Children class ->contains more information about children's wishlist
+//TODO: and letter color
+
 class Letter : public Children {
 private:
     string color;

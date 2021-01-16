@@ -7,6 +7,9 @@
 #include "../DataClassesPackage/Letter.h"
 #include "../Databases/LetterDB/LetterDatabase.h"
 
+//TODO: display all available option
+//TODO: choose between options
+//TODO: point from where all program is starting
 void MainUI::startProgram() {
     int counterDigit;
     ElfUI elfUi;
@@ -48,6 +51,7 @@ void MainUI::startProgram() {
 
 }
 
+//TODO: display available option menu
 void MainUI::showOption() {
     std::cout << "1. Insert new child and letter:\n";
     std::cout << "2. Check Letter Database:\n";
@@ -58,6 +62,7 @@ void MainUI::showOption() {
     std::cout << "Pick an option:\n";
 }
 
+//TODO: a basic readME
 void MainUI::readMe() {
     std::cout << "\t-Option 1: Insert a new children with letter in Santa's database:\n";
     std::cout << "\t-Option 2: See all letters which are in the database:\n";
@@ -66,6 +71,9 @@ void MainUI::readMe() {
     std::cout << "\t-Option 0: Close the program:\n";
 }
 
+//TODO: At the end, I handle the deleteOption
+//TODO: it's the reason that I wrote code for that here
+//TODO: delete letter by id
 void MainUI::deleteLetter() {
     int letterId;
     LetterDatabase letterDatabase;
@@ -73,10 +81,10 @@ void MainUI::deleteLetter() {
     std::cout << "Type letter ID in order to delete:\n";
     std::cin >> letterId;
     try {
-        if (letterId < 1 || letterId > allLetters.size() ) {
+        if (letterId < 1 || letterId > allLetters.size()) {
             throw "Wrong letter Id:\n";
         }
-        letterDatabase.DeleteLetterToDB(letterId-1);
+        letterDatabase.DeleteLetterToDB(letterId - 1);
         std::cout << "Letter deleted:\n";
 
     } catch (const char *err) {

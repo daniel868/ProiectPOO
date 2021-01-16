@@ -250,6 +250,33 @@ DataClassesPackage/Wishlist.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FinalProjectPOO.dir\build.make CMakeFiles/FinalProjectPOO.dir/DataClassesPackage/Wishlist.cpp.s
 .PHONY : DataClassesPackage/Wishlist.cpp.s
 
+Databases/BuilderResults.obj: Databases/BuilderResults.cpp.obj
+
+.PHONY : Databases/BuilderResults.obj
+
+# target to build an object file
+Databases/BuilderResults.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FinalProjectPOO.dir\build.make CMakeFiles/FinalProjectPOO.dir/Databases/BuilderResults.cpp.obj
+.PHONY : Databases/BuilderResults.cpp.obj
+
+Databases/BuilderResults.i: Databases/BuilderResults.cpp.i
+
+.PHONY : Databases/BuilderResults.i
+
+# target to preprocess a source file
+Databases/BuilderResults.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FinalProjectPOO.dir\build.make CMakeFiles/FinalProjectPOO.dir/Databases/BuilderResults.cpp.i
+.PHONY : Databases/BuilderResults.cpp.i
+
+Databases/BuilderResults.s: Databases/BuilderResults.cpp.s
+
+.PHONY : Databases/BuilderResults.s
+
+# target to generate assembly for a file
+Databases/BuilderResults.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FinalProjectPOO.dir\build.make CMakeFiles/FinalProjectPOO.dir/Databases/BuilderResults.cpp.s
+.PHONY : Databases/BuilderResults.cpp.s
+
 Databases/ChildrenDB/ChildrenDBInterface.obj: Databases/ChildrenDB/ChildrenDBInterface.cpp.obj
 
 .PHONY : Databases/ChildrenDB/ChildrenDBInterface.obj
@@ -892,6 +919,9 @@ help:
 	@echo ... DataClassesPackage/Wishlist.obj
 	@echo ... DataClassesPackage/Wishlist.i
 	@echo ... DataClassesPackage/Wishlist.s
+	@echo ... Databases/BuilderResults.obj
+	@echo ... Databases/BuilderResults.i
+	@echo ... Databases/BuilderResults.s
 	@echo ... Databases/ChildrenDB/ChildrenDBInterface.obj
 	@echo ... Databases/ChildrenDB/ChildrenDBInterface.i
 	@echo ... Databases/ChildrenDB/ChildrenDBInterface.s

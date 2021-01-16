@@ -11,6 +11,8 @@
 using namespace std;
 
 
+//TODO: Main Class that Handle Final UI
+//TODO: show processed data from ElfDataClass
 class ElfUI {
 public:
     void insertNewChild();

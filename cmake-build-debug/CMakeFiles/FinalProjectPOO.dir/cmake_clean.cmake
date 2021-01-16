@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/FinalProjectPOO.dir/DataClassesPackage/Gift.cpp.obj"
   "CMakeFiles/FinalProjectPOO.dir/DataClassesPackage/Letter.cpp.obj"
   "CMakeFiles/FinalProjectPOO.dir/DataClassesPackage/Wishlist.cpp.obj"
+  "CMakeFiles/FinalProjectPOO.dir/Databases/BuilderResults.cpp.obj"
   "CMakeFiles/FinalProjectPOO.dir/Databases/ChildrenDB/ChildrenDBInterface.cpp.obj"
   "CMakeFiles/FinalProjectPOO.dir/Databases/ChildrenDB/ChildrenDatabase.cpp.obj"
   "CMakeFiles/FinalProjectPOO.dir/Databases/Cities/CitiesData.cpp.obj"

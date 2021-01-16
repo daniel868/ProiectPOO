@@ -6,6 +6,8 @@
 #include "../Databases/GiftStoreData.h"
 #include "../Databases/Cities/CitiesData.h"
 
+//TODO: UI for pick child and letter data
+
 class CityUI {
 private:
 
@@ -15,15 +17,28 @@ public:
     string cityName();
 };
 
+//TODO: UI Choose country Number
 int CityUI::chooseCountryNumber() {
     int countryNumber;
     std::cout << "Children city:\n";
     std::cout << "Pick a country from the list. Type country's number:\n";
     CitiesData::printCountryList();
-    cin >> countryNumber;
+    int flag = 0;
+    while (flag == 0) {
+        try {
+            cin >> countryNumber;
+            if (countryNumber != 1) {
+                throw "Only one city available. Type 1:\n";
+            }
+            flag = 1;
+        } catch (const char *err) {
+            std::cout << err;
+        }
+    }
     return countryNumber;
 }
 
+//TODO: UI select child's city
 string CityUI::cityName() {
     string city = "default_city";
     int cityId;
@@ -32,7 +47,18 @@ string CityUI::cityName() {
         case 1: {
             CitiesData::printBotswanaCities();
             std::cout << "Select a city from the list.Type country's number:\n";
-            cin >> cityId;
+            bool flag = false;
+            while (!flag) {
+                try {
+                    cin >> cityId;
+                    if (cityId != 1 && cityId != 2 && cityId != 3 && cityId != 4 && cityId != 5) {
+                        throw "Invalid city number.Pick one between 1-5\n";
+                    }
+                    flag = true;
+                } catch (const char *err) {
+                    std::cout << err;
+                }
+            }
             city = CitiesData::FinlandToStartCities()[cityId - 1].getName();
             return city;
             break;
@@ -42,6 +68,7 @@ string CityUI::cityName() {
     }
 }
 
+//TODO: UI for child information
 Children LetterUI::setChildrenData() {
     CityUI cityUi;
     string childrenName, childrenSurname, status, city;
@@ -69,6 +96,7 @@ Children LetterUI::setChildrenData() {
     return children;
 }
 
+//TODO: UI for pick gifts for wishList
 Wishlist LetterUI::setWishListData(Children children) {
     int counter = -1;
     Wishlist wishlist;
@@ -88,15 +116,20 @@ Wishlist LetterUI::setWishListData(Children children) {
         }
         std::cout << "Select a gift number to add in your wishList:\n";
         std::cin >> counter;
-        giftList.push_back(GiftStoreData::getStoreList()[counter - 1]);
-        std::cout << "Gift added to your wishList:\n";
-        std::cout << "For add more gift, type -1 \t For exit, type 0:\n";
-        std::cin >> counter;
+        if (counter < 0 || counter > GiftStoreData::getStoreList().size()) {
+            std::cout << "Type a number between 0 and " << GiftStoreData::getStoreList().size()<< "\n";
+        } else {
+            giftList.push_back(GiftStoreData::getStoreList()[counter - 1]);
+            std::cout << "Gift added to your wishList:\n";
+            std::cout << "For add more gift, type -1 \t For exit, type 0:\n";
+            std::cin >> counter;
+        }
     }
     wishlist.setGiftList(giftList);
     return wishlist;
 }
 
+//TODO: generate final letter based on input data
 Letter LetterUI::setLetterData(Children children, Wishlist wishlist) {
     string color;
     std::cout << "Letter color(Pink/Blue):\n";

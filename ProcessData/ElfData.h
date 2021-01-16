@@ -14,6 +14,8 @@
 
 using namespace std;
 
+//TODO: class that contains all final's data
+//TODO: number of candies for every child, final gift list and so on
 
 class ElfData {
 public:

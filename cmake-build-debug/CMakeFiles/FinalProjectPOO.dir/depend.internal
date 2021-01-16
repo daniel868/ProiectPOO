@@ -17,6 +17,17 @@ CMakeFiles/FinalProjectPOO.dir/DataClassesPackage/Wishlist.cpp.obj
  C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Gift.h
  C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Wishlist.cpp
  C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Wishlist.h
+CMakeFiles/FinalProjectPOO.dir/Databases/BuilderResults.cpp.obj
+ C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Children.h
+ C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Gift.h
+ C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Letter.h
+ C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Wishlist.h
+ C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/BuilderResults.cpp
+ C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/BuilderResults.h
+ C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/GiftStoreData.h
+ C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/LetterDB/LetterDatabase.h
+ C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/LetterDB/LetterDatabaseInterface.h
+ C:/Users/danit/CLionProjects/FinalProjectPOO/Utils/Util.h
 CMakeFiles/FinalProjectPOO.dir/Databases/ChildrenDB/ChildrenDBInterface.cpp.obj
  C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Children.h
  C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/ChildrenDB/ChildrenDBInterface.cpp
@@ -144,6 +155,7 @@ CMakeFiles/FinalProjectPOO.dir/UI/ElfUI.cpp.obj
  C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Gift.h
  C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Letter.h
  C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Wishlist.h
+ C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/BuilderResults.h
  C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/ChildrenDB/ChildrenDBInterface.h
  C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/ChildrenDB/ChildrenDatabase.h
  C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/Cities/City.h
@@ -197,6 +209,7 @@ CMakeFiles/FinalProjectPOO.dir/main.cpp.obj
  C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Gift.h
  C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Letter.h
  C:/Users/danit/CLionProjects/FinalProjectPOO/DataClassesPackage/Wishlist.h
+ C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/BuilderResults.h
  C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/ChildrenDB/ChildrenDBInterface.h
  C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/ChildrenDB/ChildrenDatabase.h
  C:/Users/danit/CLionProjects/FinalProjectPOO/Databases/Cities/City.h

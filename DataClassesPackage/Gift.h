@@ -9,6 +9,9 @@
 
 using namespace std;
 
+//TODO: use for storing possible child's gift
+//TODO: help creating 'WihsList' for children
+
 class Gift {
 private:
     string gift_name;

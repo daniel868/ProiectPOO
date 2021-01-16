@@ -4,6 +4,8 @@
 
 #include "Gift.h"
 
+//TODO: get and set for Gift class items
+
 Gift::Gift(const string &giftName, float giftPrice) : gift_name(giftName), gift_price(giftPrice) {
 
 }

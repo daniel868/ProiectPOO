@@ -9,6 +9,9 @@
 #include "ChildrenDBInterface.h"
 #include "fstream"
 
+//TODO: ChildrenDatabase implementation using ChildrenInterface
+//TODO: contains all handle methods for database
+
 class ChildrenDatabase : public ChildrenDBInterface {
 public:
     void InsertChildren(Children children) override;

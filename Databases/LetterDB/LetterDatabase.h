@@ -10,6 +10,9 @@
 #include "../../Utils/Util.h"
 #include "../GiftStoreData.h"
 
+//TODO: LetterDatabase implementation using LetterDBInterface
+//TODO: contains all handle methods for database
+
 
 class LetterDatabase : public LetterDatabaseInterface {
 public:

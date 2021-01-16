@@ -9,7 +9,10 @@
 #include "AddNewLetterInterface.h"
 #include "iostream"
 using namespace std;
-
+//TODO: handle UI for inserting a new child and letter
+//TODO: create Children/Letter object
+//TODO: sent all data to the ElfUI in order to process data
+//TODO: extended from LetterInterface
 class LetterUI : public AddNewLetterInterface {
 public:
     Letter setLetterData(Children children, Wishlist wishlist) override;
